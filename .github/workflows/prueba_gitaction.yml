@@ -9,4 +9,5 @@ jobs:
     - name: Escribir hola
       run:
         echo "Hola"
+        echo "Hoy es " date
   
