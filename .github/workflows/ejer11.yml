@@ -16,9 +16,10 @@ jobs:
         
     - name: permisos script
       run: |
-        chmod +x /src/hola.sh
-        ls -l /src/hola.sh
-    
+        pwd
+        ls -l
+        chmod +x src/hola.sh
+       
     - name: ejectuta script
       run: 
         ./src/hola.sh
