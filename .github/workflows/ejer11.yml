@@ -1,0 +1,25 @@
+name: Ejecución de script
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  ejecutar_script:
+    runs-on: ubuntu-24.04
+    steps:
+    - name: muestra usuario
+      run: 
+        whoiam
+        
+    - name: permisos script
+      run: |
+        chmod +x /src/hola.sh
+        ls -l /src/hola.sh
+    
+    - name: ejectuta script
+      run: 
+        ./src/hola.sh
+        
+  
+    
+  
