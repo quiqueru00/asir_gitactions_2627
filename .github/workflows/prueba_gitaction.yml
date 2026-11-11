@@ -7,8 +7,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Escribir hola
-      run:  
-        echo "Hola" |
-        echo "Hoy es " |
+      run: | 
+        echo "Hola" 
+        echo "Hoy es " 
         date
-  
+  version_java:
+    runs-on: ubuntu-latest
+    steps:
+    - name: muestra la versión de java instalada
+      run:
+        java --version
